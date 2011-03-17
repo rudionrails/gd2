@@ -43,8 +43,8 @@ module GD2
       sum = -4
       signature.each_byte do |char|
         sum += case char
-          when ?D: 8
-          else     4
+          when ?D then 8
+          else         4
         end
       end
       "#{symbol}@#{sum}"
